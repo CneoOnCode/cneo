@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,200&display=swap");
+.navbar {
+  position: fixed;
+  width: 100%;
+  height: 45px;
+  background-color: transparent;
+  color: wheat;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.btngrps {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+li {
+  float: left;
+}
+.headerTitle {
+  letter-spacing: 10px;
+  font-size: xx-large;
+  animation-name: headerTitle;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+@keyframes headerTitle {
+  0% {
+    color: red;
+  }
+  50% {
+    color: yellow;
+  }
+  100% {
+    color: red;
+  }
+}
+.icons {
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: large;
+  word-spacing: 10px;
+}
+.logo {
+  margin-left: 10px;
+  padding-left: 10px;
+  font-size: large;
+  font-weight: bold;
+  left: 50px;
+  color: white;
+  float: right;
+}
+h1 {
+  font-size: large;
+}
+a {
+  text-decoration: none;
+  font-size: large;
+  display: block;
+  padding: 8px;
+  color: white;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+}
+
+.title {
+  animation-name: title;
+  animation-duration: 1s;
+}
+@keyframes title {
+  from {
+    top: 500px;
+    opacity: 0%;
+  }
+  to {
+    top: 0;
+    opacity: 100%;
+  }
+}
+.linkButtons {
+  width: fit-content;
+  height: fit-content + 10px;
+  background-color: rgb(56, 55, 55);
+  color: wheat;
+  transition: 1s;
+  font-size: large;
+}
+.linkButtons:hover {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: white;
+  transition: 1s;
+}
